@@ -22,29 +22,42 @@ a { text-decoration: none; }
 
 body, a { font-family: helv-l, Arial, Helvetica, sans-serif; font-size: 24px; color: rgba(0, 0, 0, 0.8); }
 
-.wrap { width: 100%; height: 100%; }
+.wrap { width: 100%; height: 100%; *zoom: 1; }
+.wrap:after { content: " "; display: table; clear: both; }
 
 .container { margin: 0 auto; width: 1060px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
+.text-light, .benef .benef__title, .advert .advert__title, .business .business__text, .btn { color: white; color: rgba(255, 255, 255, 0.8); }
+
 .ico { display: inline-block; vertical-align: middle; }
 
-.i-twit { background: url('../img/icons-sc45fb89eb1.png') 0 -1870px no-repeat; width: 16px; height: 14px; }
+.i-twit { background: url('../img/icons-s55ac5e4960.png') 0 -2062px no-repeat; width: 16px; height: 14px; }
 
-.i-fb { background: url('../img/icons-sc45fb89eb1.png') 0 -1463px no-repeat; width: 9px; height: 16px; }
+.i-fb { background: url('../img/icons-s55ac5e4960.png') 0 -1655px no-repeat; width: 9px; height: 16px; }
 
-.i-vk { background: url('../img/icons-sc45fb89eb1.png') 0 -1439px no-repeat; width: 11px; height: 14px; }
+.i-vk { background: url('../img/icons-s55ac5e4960.png') 0 -1631px no-repeat; width: 11px; height: 14px; }
 
-.i-google { background: url('../img/icons-sc45fb89eb1.png') 0 -1355px no-repeat; width: 18px; height: 16px; }
+.i-google { background: url('../img/icons-s55ac5e4960.png') 0 -1547px no-repeat; width: 18px; height: 16px; }
 
-.i-class { background: url('../img/icons-sc45fb89eb1.png') 0 -1381px no-repeat; width: 11px; height: 18px; }
+.i-class { background: url('../img/icons-s55ac5e4960.png') 0 -1573px no-repeat; width: 11px; height: 18px; }
 
-.i-pen { background: url('../img/icons-sc45fb89eb1.png') 0 -1753px no-repeat; width: 51px; height: 13px; }
+.i-pen { background: url('../img/icons-s55ac5e4960.png') 0 -1945px no-repeat; width: 51px; height: 13px; }
 
-.i-work { background: url('../img/icons-sc45fb89eb1.png') 0 -1489px no-repeat; width: 60px; height: 30px; }
+.i-work { background: url('../img/icons-s55ac5e4960.png') 0 -1681px no-repeat; width: 60px; height: 30px; }
 
-.i-cap { background: url('../img/icons-sc45fb89eb1.png') 0 -1716px no-repeat; width: 48px; height: 27px; }
+.i-cap { background: url('../img/icons-s55ac5e4960.png') 0 -1908px no-repeat; width: 48px; height: 27px; }
 
-.i-car { background: url('../img/icons-sc45fb89eb1.png') 0 -1570px no-repeat; width: 56px; height: 31px; }
+.i-car { background: url('../img/icons-s55ac5e4960.png') 0 -1762px no-repeat; width: 56px; height: 31px; }
+
+.i-down { background: url('../img/icons-s55ac5e4960.png') 0 -2035px no-repeat; width: 24px; height: 17px; }
+
+.i-panel { background: url('../img/icons-s55ac5e4960.png') 0 -237px no-repeat; width: 234px; height: 182px; }
+
+.i-mater { background: url('../img/icons-s55ac5e4960.png') 0 -621px no-repeat; width: 182px; height: 182px; }
+
+.i-car-label { background: url('../img/icons-s55ac5e4960.png') 0 -813px no-repeat; width: 182px; height: 182px; }
+
+.i-air { background: url('../img/icons-s55ac5e4960.png') 0 -429px no-repeat; width: 182px; height: 182px; }
 
 @font-face { font-family: "helv"; src: url('../fonts/HelveticaNeue.eot'); src: url('../fonts/HelveticaNeue.eot?#iefix') format('eot'), url('../fonts/HelveticaNeue.ttf') format('truetype'), url('../fonts/HelveticaNeue.svg') format('svg'), url('../fonts/HelveticaNeue.woff') format('woff'); font-weight: "HelveticaNeue.eot?#iefix"; }
 
@@ -61,10 +74,23 @@ body, a { font-family: helv-l, Arial, Helvetica, sans-serif; font-size: 24px; co
 .topper .container:after { content: " "; display: table; clear: both; }
 .topper .title { margin-bottom: 60px; }
 
+/*-----benef------------------------------------------------ */
+.benef { background-image: url('../img/home-bg.jpg?1407961788'); text-align: center; padding: 35px 0 55px; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+.benef .btn { margin-bottom: 25px; }
+.benef .title { margin-bottom: 70px; }
+.benef .benef__title { font-family: helv, Arial, Helvetica, sans-serif; font-size: 36px; }
+
+/*-----advert------------------------------------------------ */
+.advert { height: 73px; line-height: 73px; background-color: #ee2e24; }
+.advert .advert__title { text-align: center; font-size: 36px; }
+
 /*----------------------------------------------------- */
-/*----------------------------------------------------- */
-/*----------------------------------------------------- */
-/*----------------------------------------------------- */
+/*-----business------------------------------------------------ */
+.business { display: table; width: 100%; border-collapse: collapse; margin-bottom: 60px; }
+.business li { display: table-cell; text-align: center; }
+.business .ico { margin-bottom: 35px; }
+.business .business__text { font-size: 24px; line-height: 30px; }
+
 /*-----social------------------------------------------------ */
 .social { text-align: center; }
 .social li { margin: 0 7px; display: inline-block; }
@@ -86,4 +112,13 @@ body, a { font-family: helv-l, Arial, Helvetica, sans-serif; font-size: 24px; co
 .service li { margin-bottom: 25px; position: relative; padding-left: 70px; }
 .service .ico-out { position: absolute; top: 0; left: 0; width: 60px; text-align: center; }
 
+/*-----btn------------------------------------------------ */
+.btn { display: inline-block; background-color: #ee2e24; height: 45px; line-height: 45px; padding: 0 35px; font-size: 14px; font-family: helv, Arial, Helvetica, sans-serif; -webkit-border-radius: 23px; -moz-border-radius: 23px; -ms-border-radius: 23px; -o-border-radius: 23px; border-radius: 23px; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
+.btn:hover { background-color: #f25b53; }
+.btn .ico { margin-right: 13px; }
+
+/*----------------------------------------------------- */
+/*----------------------------------------------------- */
+/*----------------------------------------------------- */
+/*----------------------------------------------------- */
 /*----------------------------------------------------- */

@@ -2,7 +2,7 @@
 .header
 	height: $header-h
 	line-height: $header-h 
-	background-color: $bg-other-c  
+	background-color: $bg-other-c   
 /*-----tooper------------------------------------------------*/
 .topper
 	background-color: $bg-c
@@ -11,10 +11,31 @@
 		+clr
 	.title
 		margin-bottom: 60px	
-/*-----------------------------------------------------*/ 
+/*-----benef------------------------------------------------*/ 
+.benef
+	background-image: image-url('home-bg.jpg')
+	text-align: center
+	padding: 35px 0 55px
+	+cover
+	.btn
+		margin-bottom: 25px
+	.title
+		margin-bottom: 70px
+	.benef__title
+		@extend .text-light
+		font-family: $helv
+		font-size: 36px 				
+/*-----advert------------------------------------------------*/
+.advert
+	height: 73px
+	line-height: 73px
+	background-color: $label-c
+	.advert__title
+		text-align: center
+		font-size: 36px
+		@extend .text-light
+		
 /*-----------------------------------------------------*/
-/*-----------------------------------------------------*/
-/*-----------------------------------------------------*/
 
 
 
@@ -25,6 +46,21 @@
 
 
 
+/*-----business------------------------------------------------*/
+.business
+	display: table 
+	width: 100% 
+	border-collapse: collapse
+	margin-bottom: 60px 
+	li
+		display: table-cell
+		text-align: center
+	.ico
+		margin-bottom: 35px	
+	.business__text
+		font-size: 24px
+		line-height: 30px
+		@extend .text-light
 /*-----social------------------------------------------------*/
 .social
 	text-align: center
@@ -85,8 +121,25 @@
 		left: 0
 		width: 60px
 		text-align: center
-		
+/*-----btn------------------------------------------------*/	
+.btn
+	@extend .text-light
+	display: inline-block
+	background-color: $label-c
+	height: 45px
+	line-height: 45px
+	padding: 0 35px
+	font-size: 14px
+	font-family: $helv 
+	+border-radius(23px) 
+	+transition
+	&:hover
+		background-color: lighten($label-c, 10%) 
 	.ico
-		//background-position: 50% 50% 
-		
+		margin-right: 13px
+			
+/*-----------------------------------------------------*/	
+/*-----------------------------------------------------*/	
+/*-----------------------------------------------------*/	
+/*-----------------------------------------------------*/	
 /*-----------------------------------------------------*/	

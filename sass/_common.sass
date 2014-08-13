@@ -1,9 +1,10 @@
 $default-transition-duration: 0.3s
 
 $bg-c: #edeae7
-$bg-other-c: #666
+$bg-other-c: #666666
 $label-c: #ee2e24
 $title-c: #6c207f
+$text-c: rgba(255,255,255,.8)
 
 $helv: helv, Arial, Helvetica, sans-serif
 $helv-b: helv-b, Arial, Helvetica, sans-serif
@@ -21,9 +22,16 @@ body,a
 	width: 100%
 	//min-width: 320px
 	height: 100%
+	+clr
 .container
 	margin: 0 auto
 	width: 1060px
 	+box
+
+
+.text-light
+	color: #fff
+	color: $text-c 
+
 		
 	
