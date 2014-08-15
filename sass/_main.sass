@@ -287,11 +287,11 @@
 /*-----tour------------------------------------------------*/
 .tour
 	background-color: $bg-c
-	padding: 30px 0 
+	padding: 30px 0 35px
 	.title-big
 		margin-bottom: 10px
 	.title
-		margin-bottom: 30px
+		margin-bottom: 35px
 	.tour__info
 		+clr
 		li
@@ -306,14 +306,61 @@
 		display: inline-block
 		height: 270px
 		width: 270px
-		background-color: #FFF 
+		background-color: #FFF
+		margin-bottom: 50px
+		position: relative 
 		+border-radius(135px)
 		img
 			width: auto
-			height: 100%			
-
-/*-----------------------------------------------------*/
-
+			height: 100%	
+	.btn-big
+		margin-bottom: 75px	
+		margin-top: 15px
+	.tour__text
+		font-family: $helv-b
+		font-size: 18px
+		line-height: 24px 				
+	.contact
+		margin-top: 5px
+/*-----footer------------------------------------------------*/
+.footer
+	background-color: $bg-other-c
+	padding: 20px 0 60px 
+	.container
+		width: 880px
+	.title
+		@extend .text-light
+		margin-bottom: 30px	
+	.footer__other
+		display: table
+		table-layout: fixed
+		width: 100%
+		margin-bottom: 35px
+	.footer__label
+		display: table-cell
+		background-color: #727272
+		padding: 35px 15px 40px 
+		text-align: center 
+		+border-radius(60px) 
+		+box
+	.footer__label-help
+		background-color: transparent
+		width: 220px 
+	.foter__label-title	
+		@extend .text-light
+		font-size: 30px
+		margin-bottom: 15px
+		font-weight: normal
+	.foter__label-text
+		@extend .text-light 	
+		font-size: 14px
+		line-height: 18px
+		margin-bottom: 15px	
+	.ico
+		margin-bottom: 10px
+	.title-small
+		margin-bottom: 15px	
+		
 
 
 
@@ -363,6 +410,13 @@
 	.ico
 		margin-right: 10px
 		vertical-align: text-top	
+	.social__info
+		@extend .text-light
+		font-size: 14px
+		line-height: 18px
+		text-align: left
+		margin-top: 5px
+			
 /*-----title------------------------------------------------*/
 .title-big
 	color: $title-c
@@ -373,6 +427,12 @@
 	font-size: 28px
 	font-weight: normal
 	text-align: center
+.title-small
+	text-align: center
+	font-size: 14px
+	line-height: 18px
+	font-weight: normal
+	@extend .text-light	
 /*-----logo------------------------------------------------*/
 .logo
 	display: inline-block
@@ -414,7 +474,13 @@
 	&:hover
 		background-color: lighten($label-c, 10%) 
 	.ico
-		margin-right: 13px	
+		margin-right: 13px
+.btn-big
+	height: 52px
+	line-height: 52px
+	font-size: 26px			
+.btn-out
+	text-align: center		
 /*-----gallery------------------------------------------------*/	
 .gallery
 	.gallery__roll
@@ -471,15 +537,46 @@
 		margin-bottom: 10px  
 	.btn	
 		margin-bottom: 35px
-
-
-		
-		
-		
-
+/*-----contact------------------------------------------------*/	
+.contact
+	text-align: center
+	.contact__phone
+		font-family: $helv-b
+		font-size: 18px
+		line-height: 24px 
+	.contact__adress, .contact__mail
+		font-size: 14px
+		line-height: 18px
+	.contact__adress-roll
+	.contact__mail, .contact__phone
+		+transition
+		&:hover
+			text-decoration: underline
+			color: #000	
+/*-----feedback------------------------------------------------*/	
+.feedback
+	margin-top: 75px  
+	.feedback__input
+		height: 52px
+		line-height: 18px
+		font-size: 14px
+		text-align: center
+		padding: 0 20px
+		min-width: 195px
+		margin-bottom: 25px
+		border: 1px dotted $label-c
+		color: #5c5c5c
+		+border-radius(26px)  
+		+box
+		+placeholder
+			color: #5c5c5c
+			text-align: center	
+		&:focus
+			border: 1px solid $label-c
+			+placeholder
+				color: transparent 			
 /*-----------------------------------------------------*/	
-/*-----------------------------------------------------*/	
-/*-----------------------------------------------------*/	
+
 /*-----------------------------------------------------*/	
 
 
