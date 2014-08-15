@@ -33,8 +33,285 @@
 	.advert__title
 		text-align: center
 		font-size: 36px
+		@extend .text-light	
+/*-----make------------------------------------------------*/
+.make
+	background-color: $bg-c
+	padding: 55px 0 75px  
+	.container
+		padding: 0
+	.title-big
+		margin-bottom: 23px	 
+	.title
+		margin-bottom: 35px	
+	.make__bottom
+		+clr
+	.make__home
+		width: 415px
+		margin: 0 auto
+		padding-top: 20px
+		img
+			width: 100%
+			height: auto 
+	.make__left, .make__right
+		height: 255px
+		width: 255px
+		background-color: #FFF 
+		text-align: center
+		display: table
+		+border-radius(128px)		
+	.make__left
+		float: left
+	.make__right
+		float: right
+	.make__content
+		@extend .text-dark
+		width: 220px
+		margin: 0 auto 
+		display: table-cell
+		vertical-align: middle 
+	.make__number
+		color: $label-c
+		font-size: 36px
+		line-height: 36px
+		font-family: $helv 
+		margin-bottom: 10px
+	.make__text
+		line-height: 30px
+	.make__text-small
+		font-size: 16px
+		line-height: 20px
+		padding: 0 40px 
+		margin-bottom: 10px
+		+box
+	.make__text-big	
+		font-size: 26px
+		line-height: 30px
+	.ico
+		margin-bottom: 15px	
+/*-----note------------------------------------------------*/
+.note
+	height: 75px
+	line-height: 75px
+	background-color: $title-c
+	+cover
+	.note__title
 		@extend .text-light
-		
+		text-align: center
+		font-size: 24px
+		font-weight: normal
+	.container
+		position: relative	
+	.i-discount
+		position: absolute
+		top: -30px
+		left: 140px	
+/*-----cycle------------------------------------------------*/
+.cycle
+	background-image: image-url('bg.jpg')
+	text-align: center
+	padding: 55px 0 75px
+	background-position: 50% 100%
+	-webkit-background-size: cover
+	-o-background-size: cover
+	background-size: cover  
+	.title-big
+		margin-bottom: 10px
+	.title
+		margin-bottom: 55px
+	.btn
+		padding: 0 25px
+		margin-bottom: 62px
+	.cycle__text
+		position: relative
+		text-align: left
+		padding: 0 300px 0 195px 
+		margin-bottom: 140px
+	.cycle__text-title
+		position: relative
+		font-weight: normal
+		font-family: $helv-b
+		font-size: 18px
+		line-height: 10px 
+		padding: 0 23px 
+		margin-bottom: 27px
+		&:after
+			position: absolute
+			content: ""
+			top: 0px
+			left: 2px
+			background-color: $label-c
+			height: 10px
+			width: 10px
+			display: inline-block
+			+border-radius(5px) 
+	.cycle__text-content
+		font-size: 14px
+		line-height: 18px	
+		font-family: $helv
+	.cycle__line
+		position: relative
+		padding-right: 20px
+	.cycle__line-top
+		position: absolute
+		top: -55px
+		font-size: 28px	
+	.cycle__line-top-1
+		left: 110px
+	.cycle__line-top-2
+		left: 215px
+	.cycle__line-top-3
+		left: 427px
+	.cycle__line-top-4
+		left: 672px
+	.cycle__line-top-5
+		left: 844px								
+	.cycle__line-bottom
+		position: absolute
+		bottom: -45px	
+		font-family: $helv-b
+		font-size: 18px 
+	.cycle__line-bottom-1
+		left: 177px
+	.cycle__line-bottom-2
+		left: 318px	
+	.cycle__line-bottom-3
+		left: 537px
+	.cycle__line-bottom-4
+		left: 775px							
+	.i-bolt
+		position: absolute
+		top: -12px
+		right: 233px		 	 	
+/*-----credit------------------------------------------------*/
+.credit
+	height: 50px
+	background-color: #fff
+	padding: 35px 0 30px
+	border-bottom: 1px solid #ECE8E5
+	+clr
+	.credit__left
+		float: left
+	.credit__right
+		float: right
+	.credit__title
+		font-size: 28px
+		width: 300px
+		margin: 0 auto
+	.container
+		padding: 0 60px 
+	.i-rosbank
+		margin-top: -10px
+	.i-sberbank
+		margin-left: 50px 		 
+/*-----history------------------------------------------------*/
+.history
+	padding: 30px 0 20px
+	text-align: center
+	.title-big
+		margin-bottom: 5px
+	.title
+		margin-bottom: 45px
+	.history__gallery
+		padding: 0 50px 
+		margin-bottom: 50px
+		+box
+		+clr
+	.history__left
+		float: left
+		width: 60%
+	.history__right
+		float: right
+		width: 38%	
+	.history__left-top
+		height: 330px
+		margin-bottom: 25px
+		position: relative
+	.btn-out
+		position: absolute
+		width: 100%
+		text-align: center
+		top: 50%
+		margin-top: -22px 
+		left: 0
+	.history__left-bottom
+		+clr
+	.history__left-bottom-left 
+		width: 49%
+		float: left
+		height: 356px
+	.history__left-bottom-right
+		width: 49%
+		float: right
+	.history__left-bottom-right-top
+		height: 200px	
+		margin-bottom: 10px
+	.history__left-bottom-right-bottom
+		height: 146px
+	.history__right-top	
+		height: 240px
+		margin-bottom: 30px
+	.history__right-middle	
+		height: 140px
+		margin-bottom: 30px
+		position: relative		
+	.history__right-bottom	
+		height: 271px
+	.btn-watch
+		position: absolute
+		top: 28px
+		left: 28px
+		display: inline-block
+		+s(i-yt)
+		+transition
+		&:hover
+			+transform(scale(1.1))
+	.history__photo
+		display: inline-block
+		position: relative
+	.history__photo-info
+		position: absolute
+		top: 8px
+		right: 88px
+		width: 180px
+		font-family: $helv-b
+		font-size: 18px 
+		text-align: left
+	.history__photo-text
+		position: absolute
+		bottom: 33px
+		width: 100%
+		left: 0
+		span
+			font-size: 24px				
+/*-----tour------------------------------------------------*/
+.tour
+	background-color: $bg-c
+	padding: 30px 0 
+	.title-big
+		margin-bottom: 10px
+	.title
+		margin-bottom: 30px
+	.tour__info
+		+clr
+		li
+			width: 32%
+			margin-left: 2%
+			float: left
+			text-align: center
+			&:first-child
+				margin-left: 0
+	.tour__pic
+		overflow: hidden
+		display: inline-block
+		height: 270px
+		width: 270px
+		background-color: #FFF 
+		+border-radius(135px)
+		img
+			width: auto
+			height: 100%			
+
 /*-----------------------------------------------------*/
 
 
@@ -92,9 +369,10 @@
 	font-size: 46px
 	text-align: center 
 .title
+	@extend .text-dark	
 	font-size: 28px
 	font-weight: normal
-	text-align: center	
+	text-align: center
 /*-----logo------------------------------------------------*/
 .logo
 	display: inline-block
@@ -136,10 +414,74 @@
 	&:hover
 		background-color: lighten($label-c, 10%) 
 	.ico
-		margin-right: 13px
-			
+		margin-right: 13px	
+/*-----gallery------------------------------------------------*/	
+.gallery
+	.gallery__roll
+		margin-bottom: 35px
+		+clr
+		li
+			float: left
+			width: 32%
+			margin-left: 2%
+			&:first-child
+				margin-left: 0 
+		a
+			background-color: #FFF 
+			padding: 6px 6px 23px
+			display: inline-block 
+			+box
+			&:hover
+				img
+					+transform(scale(1.1))
+	.gallery__img
+		width: 100%
+		height: 187px
+		overflow: hidden
+		margin-bottom: 20px
+		position: relative
+		img
+			max-height: 100%
+			width: auto  
+			+transition
+	.gallery__content
+		padding: 0 27px 0 13px 
+		+clr
+	.gallery__area
+		@extend .text-dark
+		float: left
+		font-family: $helv-b
+		font-size: 18px
+		padding-top: 7px
+	.gallery__price
+		@extend .text-dark
+		float: right
+		font-size: 28px
+		line-height: 28px
+	.gallery__info
+		position: absolute
+		top: 70px
+		left: 0
+		width: 100%	
+		text-align: center
+	.gallery__number
+		font-family: $helv-b
+		font-size: 18px
+		color: #FFF
+		margin-bottom: 10px  
+	.btn	
+		margin-bottom: 35px
+
+
+		
+		
+		
+
 /*-----------------------------------------------------*/	
 /*-----------------------------------------------------*/	
 /*-----------------------------------------------------*/	
 /*-----------------------------------------------------*/	
-/*-----------------------------------------------------*/	
+
+
+
+
