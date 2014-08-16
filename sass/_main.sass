@@ -360,6 +360,104 @@
 		margin-bottom: 10px
 	.title-small
 		margin-bottom: 15px	
+/*------panel----------------------------------------------------------*/		
+.panel
+	background-color: #EDEAE7 
+	background-image: image-url('bg-2.jpg') 
+	padding: 25px 0 17px 
+	+cover
+	.container
+		text-align: center
+	.logo
+		float: none
+		height: 128px
+		width: 153px
+		text-align: center
+		margin-bottom: 20px
+		img
+			width: 100%
+			height: 100%
+	.title
+		margin-bottom: 45px		
+	.panel__block
+		+clr
+	.panel__left, .panel__right
+		float: left
+		text-align: left
+		+box
+	.panel__left
+		width: 60%
+		padding-left: 205px
+		position: relative
+	.panel__right
+		width: 40%	
+	.resume
+		position: absolute
+		top: 145px
+		right: 13px
+		width: 120px
+	.panel__service
+		padding-top: 25px		
+	.panel__service-roll
+		+clr
+		margin-bottom: 45px
+	.panel__service-ico
+		display: inline-block
+		float: left
+		width: 73px
+		text-align: right
+	.panel__service-text
+		float: left			
+		padding-left: 18px
+		width: 300px
+		.resume
+			position: static
+			width: 200px
+			margin-top: 7px
+/*-----instr-----------------------------------------------------------*/		
+.instr
+	background-color: $label-c
+	height: 72px
+	line-height: 72px
+	.container
+		+clr
+	.btn
+		float: left
+		margin-top: 10px
+		margin-left: 350px
+	.instr__text
+		float: left
+		font-size: 24px
+		line-height: 24px
+		color: #ece9e6 	
+		margin-left: 25px
+		width: 300px
+		margin-top: 12px
+/*-----delivery-----------------------------------------------------------*/		
+.delivery
+	padding: 35px 0 40px 
+	.container
+	.i-car-mod
+		margin-right: 15px
+	.title-big
+		margin-bottom: 5px	
+	.delivery__note
+		width: 800px
+		margin: 0 auto 
+	.delivery__roll	
+		+clr
+	.delivery__item
+		height: 100px
+		float: left
+		width: 32%
+		margin-left: 2%
+		background-color: #f0f0f0 
+		&:first-child
+			margin-left: 0
+		
+/*----------------------------------------------------------------*/		
+/*----------------------------------------------------------------*/		
+/*----------------------------------------------------------------*/		
 		
 
 
@@ -469,16 +567,49 @@
 	padding: 0 35px
 	font-size: 14px
 	font-family: $helv 
+	position: relative
 	+border-radius(23px) 
 	+transition
+	+box
 	&:hover
-		background-color: lighten($label-c, 10%) 
+		background-color: lighten($label-c, 10%)
+		.btn__hidden
+			font-size: 26px
 	.ico
 		margin-right: 13px
 .btn-big
 	height: 52px
 	line-height: 52px
-	font-size: 26px			
+	font-size: 26px
+.btn-mod
+	border: 1px dotted #fff
+	font-family: $helv
+	font-size: 28px 
+	padding: 0 20px 0 10px
+	color: #ece9e6
+	height: 52px
+	line-height: 34px 
+	&:hover
+		border: 1px solid #fff
+.btn-light
+	background-color: #FFF
+	border: 1px dotted $label-c
+	color: $label-c
+	height: 52px
+	line-height: 52px
+	padding: 0 25px
+	font-size: 28px
+	&:hover
+		background-color: $label-c 
+.btn__hidden
+	//display: none
+	position: absolute
+	top: 0
+	left: 0px
+	color: #FFF
+	width: 100%
+	font-size: 0
+	+transition 									
 .btn-out
 	text-align: center		
 /*-----gallery------------------------------------------------*/	
@@ -575,8 +706,36 @@
 			border: 1px solid $label-c
 			+placeholder
 				color: transparent 			
-/*-----------------------------------------------------*/	
+/*-----resume------------------------------------------------*/	
+.resume
+	.resume__title
+		color: $label-c
+		font-size: 16px
+		line-height: 18px 
+		position: relative
+		margin-bottom: 10px
+		
+		&:after
+			position: absolute
+			top: 3px
+			left: -22px
+			content: ""
+			display: inline-block
+			background-color: $label-c
+			height: 13px
+			width: 13px
+			+border-radius(7px) 
+	.resume__content
+		text-transform: uppercase
+		font-size: 9px
+		font-family: arial
+		font-weight: bold 
+		line-height: 17px
+		color: #000 
+	.resume__content
 
+
+		
 /*-----------------------------------------------------*/	
 
 
