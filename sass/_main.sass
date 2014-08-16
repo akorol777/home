@@ -205,6 +205,8 @@
 	.i-sberbank
 		margin-left: 50px 		 
 /*-----history------------------------------------------------*/
+$history-btn-h: 45px
+$history-btn-w: 140px
 .history
 	padding: 30px 0 20px
 	text-align: center
@@ -217,6 +219,23 @@
 		margin-bottom: 50px
 		+box
 		+clr
+		.btn
+			width: $history-btn-w
+			height: $history-btn-h
+			position: absolute
+			top: 150%
+			margin-top: -$history-btn-h/2 
+			left: 50%
+			margin-left: -$history-btn-w/2 
+	img
+		+transition
+	.img-out
+		width: 100%
+		&:hover
+			img
+				+transform(scale(1.1))
+			.btn
+				top: 50%
 	.history__left
 		float: left
 		width: 60%
@@ -226,20 +245,14 @@
 	.history__left-top
 		height: 330px
 		margin-bottom: 25px
-		position: relative
-	.btn-out
-		position: absolute
-		width: 100%
-		text-align: center
-		top: 50%
-		margin-top: -22px 
-		left: 0
+		width: 100%	
 	.history__left-bottom
 		+clr
 	.history__left-bottom-left 
 		width: 49%
 		float: left
-		height: 356px
+		//height: 362px
+		height: 356px 
 	.history__left-bottom-right
 		width: 49%
 		float: right
@@ -254,7 +267,6 @@
 	.history__right-middle	
 		height: 140px
 		margin-bottom: 30px
-		position: relative		
 	.history__right-bottom	
 		height: 271px
 	.btn-watch
@@ -434,6 +446,7 @@
 		width: 300px
 		margin-top: 12px
 /*-----delivery-----------------------------------------------------------*/		
+$delivery__label-size: 105px
 .delivery
 	padding: 35px 0 40px 
 	.i-car-mod
@@ -456,6 +469,9 @@
 		+box 
 		&:first-child
 			margin-left: 0
+		&:hover
+			.delivery__label
+				+transform(scale(1))
 	.delivery__article
 		font-family: arial
 		font-size: 20px
@@ -473,6 +489,31 @@
 		margin-bottom: 25px
 	.delivery__img
 		margin-bottom: 25px
+	.delivery__label
+		position: absolute
+		top: 0
+		left: 32%
+		height: $delivery__label-size
+		width: $delivery__label-size
+		display: inline-block
+		background-color: #6c207f 
+		text-align: center
+		padding-top: 23px 
+		overflow: hidden 	
+		+transition
+		+border-radius($delivery__label-size/2)
+		+box
+		+transform(scale(0))
+		.ico
+			margin-top: 6px
+			margin-bottom: 6px
+	.delivery__label-text
+		font-family: arial
+		font-weight: bold
+		line-height: 10px
+		font-size: 9px
+		color: #efebe9 
+		text-transform: uppercase	
 	.delivery__size
 		margin-bottom: 80px 
 		.title
@@ -571,8 +612,8 @@
 			width: 30%
 		.line__content-big
 			width: 40%
-	.line__content-top
-	.line__content-img		
+	//.line__content-top
+	//.line__content-img		
 /*----------------------------------------------------------------*/		
 		
 
@@ -753,29 +794,30 @@
 	.gallery__roll
 		margin-bottom: 35px
 		+clr
+		+box
 		li
 			float: left
 			width: 32%
 			margin-left: 2%
 			&:first-child
 				margin-left: 0 
-		a
+		.gallery__link
 			background-color: #FFF 
 			padding: 6px 6px 23px
-			display: inline-block 
+			display: block 
 			+box
 			&:hover
 				img
 					+transform(scale(1.1))
+				.gallery__info
+					top: 70px	
 	.gallery__img
 		width: 100%
 		height: 187px
 		overflow: hidden
 		margin-bottom: 20px
 		position: relative
-		img
-			max-height: 100%
-			width: auto  
+		img 
 			+transition
 	.gallery__content
 		padding: 0 27px 0 13px 
@@ -793,10 +835,12 @@
 		line-height: 28px
 	.gallery__info
 		position: absolute
-		top: 70px
+		//top: 70px
+		top: 200px
 		left: 0
 		width: 100%	
 		text-align: center
+		+transition
 	.gallery__number
 		font-family: $helv-b
 		font-size: 18px

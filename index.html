@@ -10,7 +10,7 @@
 </head>
 <body>
 	<div class="wrap">
-		<div class="header">
+		<div class="header" id="header">
 			<div class="container">
 				<ul class="social">
 					<li><a href="#"><i class="ico i-twit"></i>115</a></li>
@@ -49,7 +49,7 @@
 		<!--/.topper-->
 		<div class="benef">
 			<div class="container">
-				<button class="btn"><i class="ico i-down"></i>Вниз</button>
+				<a href="#make" class="btn"><i class="ico i-down"></i>Вниз</a>
 				<h3 class="title-big">Мы не говорим что мы №1.</h3>
 				<h4 class="title">Мы просто единственные делаем.</h4>
 				<ul class="business">
@@ -83,16 +83,20 @@
 			</div>
 		</div>
 		<!--/.advert-->
-		<div class="make">
+		<div class="make" id="make">
 			<div class="container">
 				<h4 class="title-big">Производство и доставка домов</h4>
 				<h3 class="title">По типовому и индивидуальному проекты на ваш участок</h3>
 				<div class="gallery">
 					<ul class="gallery__roll">
 						<li>
-							<a href="#">
+							<a class="gallery__link" href="#">
 								<div class="gallery__img">
-									<img src="img/home.jpg" alt="#">
+									<img src="img/home1.jpg" alt="#">
+									<div class="gallery__info">
+										<button class="btn">Подробнее</button>
+										<div class="gallery__number">P 35265</div>
+									</div>	
 								</div>
 								<div class="gallery__content">
 									<div class="gallery__area">120 / 145 м2</div>
@@ -101,7 +105,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a class="gallery__link" href="#">
 								<div class="gallery__img">
 									<img src="img/home.jpg" alt="#">
 									<div class="gallery__info">
@@ -116,7 +120,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a class="gallery__link" href="#">
 								<div class="gallery__img">
 									<img src="img/home.jpg" alt="#">
 									<div class="gallery__info">
@@ -129,22 +133,11 @@
 									<div class="gallery__price">1.2 млн. р</div>	
 								</div>
 							</a>
-						</li>						
+						</li>					
 					</ul>
 					<ul class="gallery__roll">
 						<li>
-							<a href="#">
-								<div class="gallery__img">
-									<img src="img/home.jpg" alt="#">
-								</div>
-								<div class="gallery__content">
-									<div class="gallery__area">120 / 145 м2</div>
-									<div class="gallery__price">1.2 млн. р</div>	
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#">
+							<a class="gallery__link" href="#">
 								<div class="gallery__img">
 									<img src="img/home.jpg" alt="#">
 									<div class="gallery__info">
@@ -159,31 +152,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#">
-								<div class="gallery__img">
-									<img src="img/home.jpg" alt="#">	
-								</div>
-								<div class="gallery__content">
-									<div class="gallery__area">120 / 145 м2</div>
-									<div class="gallery__price">1.2 млн. р</div>	
-								</div>
-							</a>
-						</li>						
-					</ul>	
-					<ul class="gallery__roll">
-						<li>
-							<a href="#">
-								<div class="gallery__img">
-									<img src="img/home.jpg" alt="#">
-								</div>
-								<div class="gallery__content">
-									<div class="gallery__area">120 / 145 м2</div>
-									<div class="gallery__price">1.2 млн. р</div>	
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#">
+							<a class="gallery__link" href="#">
 								<div class="gallery__img">
 									<img src="img/home.jpg" alt="#">
 									<div class="gallery__info">
@@ -198,7 +167,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a class="gallery__link" href="#">
 								<div class="gallery__img">
 									<img src="img/home.jpg" alt="#">
 									<div class="gallery__info">
@@ -211,22 +180,11 @@
 									<div class="gallery__price">1.2 млн. р</div>	
 								</div>
 							</a>
-						</li>						
+						</li>					
 					</ul>
 					<ul class="gallery__roll">
 						<li>
-							<a href="#">
-								<div class="gallery__img">
-									<img src="img/home.jpg" alt="#">
-								</div>
-								<div class="gallery__content">
-									<div class="gallery__area">120 / 145 м2</div>
-									<div class="gallery__price">1.2 млн. р</div>	
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#">
+							<a class="gallery__link" href="#">
 								<div class="gallery__img">
 									<img src="img/home.jpg" alt="#">
 									<div class="gallery__info">
@@ -241,17 +199,83 @@
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a class="gallery__link" href="#">
 								<div class="gallery__img">
-									<img src="img/home.jpg" alt="#">	
+									<img src="img/home.jpg" alt="#">
+									<div class="gallery__info">
+										<button class="btn">Подробнее</button>
+										<div class="gallery__number">P 35265</div>
+									</div>	
 								</div>
 								<div class="gallery__content">
 									<div class="gallery__area">120 / 145 м2</div>
 									<div class="gallery__price">1.2 млн. р</div>	
 								</div>
 							</a>
-						</li>						
-					</ul>												
+						</li>
+						<li>
+							<a class="gallery__link" href="#">
+								<div class="gallery__img">
+									<img src="img/home.jpg" alt="#">
+									<div class="gallery__info">
+										<button class="btn">Подробнее</button>
+										<div class="gallery__number">P 35265</div>
+									</div>	
+								</div>
+								<div class="gallery__content">
+									<div class="gallery__area">120 / 145 м2</div>
+									<div class="gallery__price">1.2 млн. р</div>	
+								</div>
+							</a>
+						</li>					
+					</ul>
+					<ul class="gallery__roll">
+						<li>
+							<a class="gallery__link" href="#">
+								<div class="gallery__img">
+									<img src="img/home.jpg" alt="#">
+									<div class="gallery__info">
+										<button class="btn">Подробнее</button>
+										<div class="gallery__number">P 35265</div>
+									</div>	
+								</div>
+								<div class="gallery__content">
+									<div class="gallery__area">120 / 145 м2</div>
+									<div class="gallery__price">1.2 млн. р</div>	
+								</div>
+							</a>
+						</li>
+						<li>
+							<a class="gallery__link" href="#">
+								<div class="gallery__img">
+									<img src="img/home.jpg" alt="#">
+									<div class="gallery__info">
+										<button class="btn">Подробнее</button>
+										<div class="gallery__number">P 35265</div>
+									</div>	
+								</div>
+								<div class="gallery__content">
+									<div class="gallery__area">120 / 145 м2</div>
+									<div class="gallery__price">1.2 млн. р</div>	
+								</div>
+							</a>
+						</li>
+						<li>
+							<a class="gallery__link" href="#">
+								<div class="gallery__img">
+									<img src="img/home.jpg" alt="#">
+									<div class="gallery__info">
+										<button class="btn">Подробнее</button>
+										<div class="gallery__number">P 35265</div>
+									</div>	
+								</div>
+								<div class="gallery__content">
+									<div class="gallery__area">120 / 145 м2</div>
+									<div class="gallery__price">1.2 млн. р</div>	
+								</div>
+							</a>
+						</li>					
+					</ul>				
 				</div>
 				<div class="make__bottom">
 					<div class="make__left">
@@ -285,7 +309,7 @@
 			<div class="container">
 				<h3 class="title-big">Строительство. Цикл работ ArcticWall.</h3>
 				<h4 class="title">Проект готов. Дом произведен - что дальше?</h4>
-				<button class="btn"><i class="ico i-down"></i>Дальше</button>
+				<a href="#history" class="btn"><i class="ico i-down"></i>Дальше</a>
 				<div class="cycle__text">
 					<h5 class="cycle__text-title">Пробное завинчивание - 1 день</h5>
 					<div class="cycle__text-content">
@@ -316,7 +340,7 @@
 			</div>	
 		</div>
 		<!--/.credit-->
-		<div class="history">
+		<div class="history" id="history">
 			<div class="container">
 				<h3 class="title-big">Истории наших клиентов</h4>
 				<h4 class="title">Видео-отзывы и фотографии домов наших клиентов.</h4>
@@ -324,34 +348,32 @@
 					<div class="history__left">
 						<div class="history__left-top img-out">
 							<img src="img/home.jpg" alt="#">
-							<div class="btn-out">
-								<button class="btn">Смотреть</button>
-							</div>
+							<button class="btn">Смотреть</button>
 						</div>
 						<div class="history__left-bottom">
 							<div class="history__left-bottom-left img-out">
-								<img src="img/home.jpg" alt="#">
+								<img src="img/home.jpg" alt="#"><button class="btn">Смотреть</button>
 							</div>
 							<div class="history__left-bottom-right">
 								<div class="history__left-bottom-right-top img-out">
-									<img src="img/home.jpg" alt="#">
+									<img src="img/home.jpg" alt="#"><button class="btn">Смотреть</button>
 								</div>	
 								<div class="history__left-bottom-right-bottom img-out">
-									<img src="img/home.jpg" alt="#">
+									<img src="img/home.jpg" alt="#"><button class="btn">Смотреть</button>
 								</div>								
 							</div>														
 						</div>						
 					</div>
 					<div class="history__right">
 						<div class="history__right-top img-out">
-							<img src="img/home.jpg" alt="#">
+							<img src="img/home.jpg" alt="#"><button class="btn">Смотреть</button>
 						</div>
 						<div class="history__right-middle img-out">
-							<img src="img/home.jpg" alt="#">
+							<img src="img/home.jpg" alt="#"><button class="btn">Смотреть</button>
 							<a href="#" class="btn-watch"></a>
 						</div>
 						<div class="history__right-bottom img-out">
-							<img src="img/home.jpg" alt="#">
+							<img src="img/home.jpg" alt="#"><button class="btn">Смотреть</button>
 						</div>												
 					</div>			
 				</div>
@@ -397,10 +419,10 @@
 							</form>
 						</div>
 						<div class="btn-out">
-							<button class="btn btn-big">Отправить</button>
+							<button href="#header" class="btn btn-big">Отправить</button>
 						</div>	
 						<div class="btn-out">	
-							<button class="btn"><i class="ico i-top"></i>Вверх</button>
+							<a href="#header" class="btn"><i class="ico i-top"></i>Вверх</a>
 						</div>
 					</li>
 					<li>
