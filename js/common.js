@@ -86,16 +86,19 @@ $(document).ready(function() {
 	);
 	$( ".js-open-timelinecontent11" ).hover(
 	  function() {
+	  	$(".timelinecontent").removeClass("is-show")
 	    $( ".timelinecontent_11" ).addClass("is-show");
 	  }
 	);
 	$( ".js-open-timelinecontent12" ).hover(
 	  function() {
+	  	$(".timelinecontent").removeClass("is-show")
 	    $( ".timelinecontent_12" ).addClass("is-show");
 	  }
 	);
 	$( ".js-open-timelinecontent13" ).hover(
 	  function() {
+	  	$(".timelinecontent").removeClass("is-show")
 	    $( ".timelinecontent_13" ).addClass("is-show");
 	  }
 	);

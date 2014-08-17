@@ -602,6 +602,8 @@ $delivery__label-size: 105px
 /*-----line-----------------------------------------------------------*/		
 .line
 	padding: 40px 0 75px
+	.container
+		width: 1160px 
 	.title-big
 		margin-bottom: 10px
 	.title
@@ -862,33 +864,128 @@ $delivery__label-size: 105px
 		margin-right: 25px	
 /*-----protect-----------------------------------------------------------*/		
 .protect
-	padding: 50px 0 50px
+	padding: 60px 0 65px
 	background-color: $bg-c
-
-/*----------------------------------------------------------------*/		
-/*----------------------------------------------------------------*/		
-/*----------------------------------------------------------------*/		
-/*----------------------------------------------------------------*/		
-/*----------------------------------------------------------------*/		
-/*----------------------------------------------------------------*/		
-/*----------------------------------------------------------------*/		
-		
-		
-
-
-
-
-
-
-
-
+	.container
+		width: 1160px
+	.title-big
+		margin-bottom: 10px
+	.title
+		margin-bottom: 60px
+	.title-protect
+		margin-bottom: 25px	
+	.protect__test
+		+clr
+	.protect__test-small, .protect__test-big
+		float: left
+		text-align: left
+		+box
+	.protect__test-small
+		position: relative
+		width: 29%
+		padding: 15px 40px 0 25px
+	.protect__test-big
+		width: 42%	
+	.protect__title
+		font-size: 36px
+		color: $label-c 
+		margin-bottom: 220px
+	.protect__title-small
+		font-size: 24px
+		margin-bottom: 25px	
+	.protect__text
+		font-size: 14px
+		line-height: 18px	
+	.ico
+		position: absolute		
+	.i-jeep
+		top: 115px
+		left: 20px
+	.i-eleph
+		top: -10px
+		left: 110px	
+	.protect__test-last
+		padding-left: 105px
+		padding-right: 0
+		.protect__title
+			text-align: right
+			padding-right: 20px
+	.protect__test-player		
+		position: relative
+		margin-bottom: 25px	
+	.protect__test-video
+		position: relative
+		z-index: 7	
+	.protect__test-shadow
+		position: absolute
+		top: 0
+		left: 0	
+	.protect__test-info
+		+clr
+		.protect__title
+			margin-bottom: 0
+	.protect__test-left
+		float: left
+		width: 60%
+		+box 
+	.protect__test-right
+		float: left
+		width: 40%
+		+box
+/*-----advantage-----------------------------------------------------------*/		
+.advantage
+	padding: 35px 0 45px 
+	background-color: #FFF 
+	.title-big
+		margin-bottom: 10px
+	.title
+		margin-bottom: 10px
+	.advantage__content
+		display: table
+		table-layout: fixed
+		width: 90%
+		margin: 0 auto 
+	.advantage__content-item	
+		display: table-cell 
+		height: 300px
+		text-align: center
+		padding: 50px 10px 0 
+		vertical-align: top
+		+box
+	.ico-out
+		height: 150px	
+		height: 115px
+		+box
+	.advantage__content-title
+		margin-bottom: 15px
+		font-size: 24px
+	.advantage__content-text
+		font-size: 14px
+		line-height: 18px							
+/*-----homenocold-----------*/
+.homenocold
+	.benef
+		padding: 60px 0 15px 
+		.title
+			margin-bottom: 190px
+		.title-big
+			margin-bottom: 15px
+	.business
+		width: 88% 
+		margin: 0 auto 
+		margin-bottom: 180px
+		li
+			padding: 0 10px 
+		.ico
+			margin-bottom: 20px	
 
 /*-----business------------------------------------------------*/
 .business
 	display: table 
 	width: 100% 
 	border-collapse: collapse
-	margin-bottom: 60px 
+	margin-bottom: 60px
+	table-layout: fixed 
 	li
 		display: table-cell
 		text-align: center
@@ -1146,7 +1243,6 @@ $delivery__label-size: 105px
 		line-height: 18px 
 		position: relative
 		margin-bottom: 10px
-		
 		&:after
 			position: absolute
 			top: 3px
@@ -1164,11 +1260,3 @@ $delivery__label-size: 105px
 		font-weight: bold 
 		line-height: 17px
 		color: #000 
-
-
-		
-/*-----------------------------------------------------*/	
-
-
-
-
