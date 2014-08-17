@@ -273,7 +273,14 @@ $history-btn-w: 140px
 		height: 140px
 		line-height: 140px
 		margin-bottom: 30px
-		background-color: $bg-c 
+		background-color: $bg-c
+		display: inline-block
+		&:hover
+			.btn-watch
+				+transform(scale(1.1))
+		span
+			margin-left: 130px
+			font-size: 20px
 	.history__right-bottom	
 		height: 271px
 		line-height: 271px
@@ -284,8 +291,6 @@ $history-btn-w: 140px
 		display: inline-block
 		+s(i-yt)
 		+transition
-		&:hover
-			+transform(scale(1.1))
 	.history__photo
 		display: inline-block
 		position: relative
@@ -854,9 +859,20 @@ $delivery__label-size: 105px
 	text-align: center
 	font-size: 28px 
 	.important__ico
-		margin-right: 25px
-	
+		margin-right: 25px	
+/*-----protect-----------------------------------------------------------*/		
+.protect
+	padding: 50px 0 50px
+	background-color: $bg-c
+
 /*----------------------------------------------------------------*/		
+/*----------------------------------------------------------------*/		
+/*----------------------------------------------------------------*/		
+/*----------------------------------------------------------------*/		
+/*----------------------------------------------------------------*/		
+/*----------------------------------------------------------------*/		
+/*----------------------------------------------------------------*/		
+		
 		
 
 

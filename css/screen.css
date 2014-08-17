@@ -366,10 +366,11 @@ body, a { font-family: helv-l, Arial, Helvetica, sans-serif; font-size: 24px; co
 .history .history__left-bottom-right-top { height: 200px; line-height: 200px; margin-bottom: 10px; }
 .history .history__left-bottom-right-bottom { height: 146px; line-height: 146px; }
 .history .history__right-top { height: 240px; line-height: 240px; margin-bottom: 30px; }
-.history .history__right-middle { height: 140px; line-height: 140px; margin-bottom: 30px; background-color: #edeae7; }
+.history .history__right-middle { height: 140px; line-height: 140px; margin-bottom: 30px; background-color: #edeae7; display: inline-block; }
+.history .history__right-middle:hover .btn-watch { -webkit-transform: scale(1.1); -moz-transform: scale(1.1); -ms-transform: scale(1.1); -o-transform: scale(1.1); transform: scale(1.1); }
+.history .history__right-middle span { margin-left: 130px; font-size: 20px; }
 .history .history__right-bottom { height: 271px; line-height: 271px; }
 .history .btn-watch { position: absolute; top: 28px; left: 28px; display: inline-block; background: url('../img/icons-sa16fe7a808.png') 0 -2069px no-repeat; width: 83px; height: 83px; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
-.history .btn-watch:hover { -webkit-transform: scale(1.1); -moz-transform: scale(1.1); -ms-transform: scale(1.1); -o-transform: scale(1.1); transform: scale(1.1); }
 .history .history__photo { display: inline-block; position: relative; }
 .history .history__photo-info { position: absolute; top: 8px; right: 88px; width: 180px; font-family: helv-b, Arial, Helvetica, sans-serif; font-size: 18px; text-align: left; }
 .history .history__photo-text { position: absolute; bottom: 33px; width: 100%; left: 0; }
@@ -561,6 +562,15 @@ body, a { font-family: helv-l, Arial, Helvetica, sans-serif; font-size: 24px; co
 .important { background-color: #ee2e24; height: 72px; line-height: 64px; text-align: center; font-size: 28px; }
 .important .important__ico { margin-right: 25px; }
 
+/*-----protect----------------------------------------------------------- */
+.protect { padding: 50px 0 50px; background-color: #edeae7; }
+
+/*---------------------------------------------------------------- */
+/*---------------------------------------------------------------- */
+/*---------------------------------------------------------------- */
+/*---------------------------------------------------------------- */
+/*---------------------------------------------------------------- */
+/*---------------------------------------------------------------- */
 /*---------------------------------------------------------------- */
 /*-----business------------------------------------------------ */
 .business { display: table; width: 100%; border-collapse: collapse; margin-bottom: 60px; }
