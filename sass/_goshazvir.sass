@@ -1,0 +1,182 @@
+.asd
+	background: #EDEAE7
+	.asd__in
+		width: 1060px
+		margin: 0 auto
+		min-height: 600px
+
+.timeline
+	margin-bottom: 50px
+	.timeline__meta
+		height: 65px
+		line-height: 65px
+		position: relative
+		font-size: 18px
+		color: rgba(#000, .8) 
+	.timeline__metabig
+		font-size: 28px
+	.timeline__meta1
+		position: absolute
+		top: 0
+		left: 0
+	.timeline__meta2
+		position: absolute
+		top: 0
+		left: 170px
+	.timeline__meta3
+		position: absolute
+		top: 0
+		left: 320px
+	.timeline__meta4
+		width: 100px
+		position: absolute
+		top: 0
+		left: 50%
+		margin-left: -50px
+	.timeline__meta5
+		position: absolute
+		top: 0
+		right: 320px
+	.timeline__meta6
+		position: absolute
+		top: 0
+		right: 170px
+	.timeline__meta7
+		position: absolute
+		top: 0
+		right: 0
+	.timeline__in
+		position: relative
+	.timeline__line
+		width: 100%
+		height: 9px
+		margin-top: 17px
+		background-image: image-url('i-line.png')
+	.timeline__year
+		width: 46px
+		height: 46px
+		border-radius: 50%
+		background: #6C207F
+		border: 10px solid #edeae7
+		+transition
+		position: absolute
+		top: -30px
+		&:hover
+			background: #EE2E24
+			+transition
+			.history-wrap
+				+transition
+				+opacity(1)
+	.timeline__year1
+		left: -5px
+		&:hover
+			.history-wrap_1
+				left: 55px
+	.timeline__year2
+		left: 143px
+		&:hover
+			.history-wrap_2
+				left: 55px
+	.timeline__year3
+		left: 298px
+		&:hover
+			.history-wrap_3
+				left: 55px
+	.timeline__year4
+		left: 50%
+		margin-left: -50px
+		&:hover
+			.history-wrap_4
+				left: 55px
+	.timeline__year5
+		right: 294px
+		&:hover
+			.history-wrap_5
+				left: 55px
+	.timeline__year6
+		right: 143px
+		&:hover
+			.history-wrap_6
+				left: 55px
+	.timeline__year7
+		right: -5px
+		&:hover
+			.history-wrap_7
+				left: auto
+				right: 55px
+
+.history-wrap
+	display: inline-block
+	position: relative
+	font-size: 0
+	position: absolute
+	top: 16px
+	left: -20px
+	+opacity(0)
+	+transition
+	.history-wrap_align
+		text-align: center
+		.myhistory
+			display: inline-block
+	&.history-wrap_1
+		width: 83px
+		.history_1
+			position: absolute
+			left: 10px
+		.history_2
+			left: 30px
+		.history_3
+			left: 50px
+		.history_4
+			left: 70px
+	&.history-wrap_2
+		width: 93px
+	&.history-wrap_3
+		width: 120px
+	&.history-wrap_4
+		width: 158px
+	&.history-wrap_5
+		width: 85px
+	&.history-wrap_6
+		width: 85px
+	&.history-wrap_7
+		width: 85px
+		left: auto
+		right: -20px
+.myhistory
+	display: inline-block
+	width: 16px
+	height: 16px
+	margin-left: 6px
+	border-radius: 50%
+	background: #fff
+	position: relative
+	&:hover
+		&:before
+			+transition
+			background: #ee2e24
+			z-index: 9999
+	&:first-child
+		margin-left: 0
+	&:before
+		content: ""
+		width: 10px
+		height: 10px
+		border-radius: 50%
+		background: #fff
+		+transition
+		position: absolute
+		top: 3px
+		left: 3px
+		
+.timelinecontent-wrap
+	position: relative
+	.timelinecontent
+		position: absolute
+		top: 0
+		left: 0
+		+opacity(0)
+		+transition
+		&.is-show
+			+opacity(1)
+			+transition
