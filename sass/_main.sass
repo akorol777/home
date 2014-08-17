@@ -358,10 +358,10 @@ $history-btn-w: 140px
 		margin-bottom: 35px
 	.footer__label
 		display: table-cell
-		background-color: #727272
+		//background-color: #727272
 		padding: 35px 15px 40px 
 		text-align: center 
-		+border-radius(60px) 
+		//+border-radius(60px) 
 		+box
 	.footer__label-help
 		background-color: transparent
@@ -674,7 +674,7 @@ $delivery__label-size: 105px
 			height: 13px
 			width: 13px
 			display: inline-block
-			+border-radius(5px) 		 
+			+border-radius(7px) 		 
 	.line__more-right
 		float: right
 		width: 130px
@@ -713,9 +713,114 @@ $delivery__label-size: 105px
 			margin-bottom: 20px
 	.logo
 		margin-bottom: 25px			 
-/*----------------------------------------------------------------*/		
-/*----------------------------------------------------------------*/		
-/*----------------------------------------------------------------*/		
+/*-----promo-----------------------------------------------------------*/		
+.promo
+	padding: 95px 0 30px
+	background-color: $bg-c 
+	background-image: image-url('bg-3.jpg')
+	text-align: center
+	+cover 
+	.title
+		margin-bottom: 230px
+	.logo
+		margin-bottom: 20px		
+/*----tech------------------------------------------------------------*/		
+.tech
+	padding: 50px 0 90px
+	background-color: $bg-c
+	text-align: center
+	.title
+		margin-bottom: 110px
+	.tech__line
+		position: relative
+		margin-bottom: 55px
+	.tech__line-text
+		position: absolute
+		top: -42px
+		font-size: 18px
+		line-height: 18px
+	.tech__line-year
+		font-size: 28px
+		top: -45px
+	.tech__line-text1
+		left: 60px
+	.tech__line-text2
+		left: 233px
+	.tech__line-text3
+		left: 375px
+	.tech__line-text4
+		left: 500px
+	.tech__line-text5
+		left: 675px
+	.tech__line-text6
+		left: 815px
+	.tech__line-text7
+		left: 932px	
+	.tech__info
+		+clr	
+	.tech__content
+		float: left
+		width: 70%
+		text-align: left
+		padding-left: 75px
+		+box
+	.tech__content-year
+		font-family: $helv-b
+		position: relative 
+		font-size: 18px
+		margin-bottom: 15px
+		padding-left: 20px
+		&:after
+			position: absolute
+			content: ""
+			top: 8px
+			left: 2px
+			background-color: $label-c
+			height: 10px
+			width: 10px
+			display: inline-block
+			+border-radius(5px) 		
+	.tech__content-text
+		font-size: 14px
+		line-height: 18px
+	.tech__man
+		float: right
+		height: 175px
+		width: 175px
+		margin-right: 80px
+		overflow: hidden
+		+border-radius(88px)
+		+box 	
+/*-----effect-----------------------------------------------------------*/		
+.effect
+	padding: 60px 0 45px
+	text-align: center
+	.title-big
+		margin-bottom: 5px
+	.title
+		margin-bottom: 40px	
+	.effect__graph
+		margin-bottom: 10px
+		+clr
+	.effect__graph-col
+		width: 50% 
+		float: left
+		text-align: center
+		+box
+	.effect__graph-contetn
+		min-height: 375px 
+	.effect__graph-text
+		font-size: 24px		
+	.effect__ico
+		margin-bottom: 25px	
+	.effect__text
+		font-size: 24px
+		line-height: 24px
+		padding: 0 150px 
+		+box
+
+
+
 /*----------------------------------------------------------------*/		
 /*----------------------------------------------------------------*/		
 /*----------------------------------------------------------------*/		
