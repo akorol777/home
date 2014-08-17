@@ -7,6 +7,49 @@
 
 .timeline
 	margin-bottom: 50px
+	&.timeline_mini
+		width: 750px
+		margin: 0 auto
+		.timeline__year1
+			left: 0
+		.timeline__year2
+			left: 140px
+		.timeline__year3
+			left: 330px
+			right: auto
+		.timeline__year4
+			right: 180px
+			left: auto
+			margin-left: 0
+		.timeline__year5
+			right: 0
+			&:hover
+				.history-wrap_5
+					left: auto !important
+					right: 58px !important
+					width: 112px
+		.timeline__meta1
+			left: 0
+		.timeline__meta2
+			left: 100px
+		.timeline__meta3
+			left: 306px
+			right: auto
+		.timeline__meta4
+			right: 180px
+			left: auto
+			margin-left: 0
+		.timeline__meta5
+			right: 0
+		.history-wrap_2
+			width: 127px
+		.history-wrap_3
+			width: 110px
+		.history-wrap_4
+			width: 116px
+
+
+
 	.timeline__meta
 		height: 65px
 		line-height: 65px
@@ -170,13 +213,39 @@
 		left: 3px
 		
 .timelinecontent-wrap
+	min-height: 140px
 	position: relative
-	.timelinecontent
-		position: absolute
-		top: 0
-		left: 0
-		+opacity(0)
+.timelinecontent
+	position: absolute
+	top: 0
+	left: 0
+	+opacity(0)
+	+transition
+	&.is-show
+		+opacity(1)
 		+transition
-		&.is-show
-			+opacity(1)
-			+transition
+
+.cycle__line
+	.cycle__line-bottom-1
+		left: 220px !important
+	.cycle__line-bottom-2
+		left: 375px !important
+	.cycle__line-bottom-3
+		left: 557px !important
+	.cycle__line-bottom-4
+		left: 750px !important
+
+.cycle__text
+	.ico
+		position: absolute !important
+		top: -12px !important
+		right: 233px !important
+
+.ico2
+	+s(ico2)
+.ico3
+	+s(ico3)
+.ico4
+	+s(ico4)
+.ico5
+	+s(ico5)

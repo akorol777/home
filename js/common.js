@@ -13,41 +13,38 @@ $(document).ready(function() {
 
 	$( ".js-open-timelinecontent1" ).hover(
 	  function() {
+	  	$( ".timelinecontent" ).removeClass("is-show");
 	    $( ".timelinecontent_1" ).addClass("is-show");
-	  }, function() {
-	    $( ".timelinecontent_1" ).removeClass("is-show");
 	  }
 	);
 	$( ".js-open-timelinecontent2" ).hover(
 	  function() {
+	  	$( ".timelinecontent" ).removeClass("is-show");
 	    $( ".timelinecontent_2" ).addClass("is-show");
-	  }, function() {
-	    $( ".timelinecontent_2" ).removeClass("is-show");
 	  }
 	);
 	$( ".js-open-timelinecontent3" ).hover(
 	  function() {
+	  	$( ".timelinecontent" ).removeClass("is-show");
 	    $( ".timelinecontent_3" ).addClass("is-show");
-	  }, function() {
-	    $( ".timelinecontent_3" ).removeClass("is-show");
 	  }
 	);
 	$( ".js-open-timelinecontent4" ).hover(
 	  function() {
+	  	$( ".timelinecontent" ).removeClass("is-show");
 	    $( ".timelinecontent_4" ).addClass("is-show");
-	  }, function() {
-	    $( ".timelinecontent_4" ).removeClass("is-show");
 	  }
 	);
 	$( ".js-open-timelinecontent5" ).hover(
 	  function() {
+	  	$( ".timelinecontent" ).removeClass("is-show");
 	    $( ".timelinecontent_5" ).addClass("is-show");
-	  }, function() {
-	    $( ".timelinecontent_5" ).removeClass("is-show");
 	  }
 	);
+
 	$( ".js-open-timelinecontent6" ).hover(
 	  function() {
+	  	$(".timelinecontent").removeClass("is-show")
 	    $( ".timelinecontent_6" ).addClass("is-show");
 	  }, function() {
 	    $( ".timelinecontent_6" ).removeClass("is-show");
@@ -55,6 +52,7 @@ $(document).ready(function() {
 	);
 	$( ".js-open-timelinecontent7" ).hover(
 	  function() {
+	  	$(".timelinecontent").removeClass("is-show")
 	    $( ".timelinecontent_7" ).addClass("is-show");
 	  }, function() {
 	    $( ".timelinecontent_7" ).removeClass("is-show");
@@ -62,6 +60,7 @@ $(document).ready(function() {
 	);
 	$( ".js-open-timelinecontent8" ).hover(
 	  function() {
+	  	$(".timelinecontent").removeClass("is-show")
 	    $( ".timelinecontent_8" ).addClass("is-show");
 	  }, function() {
 	    $( ".timelinecontent_8" ).removeClass("is-show");
@@ -69,6 +68,7 @@ $(document).ready(function() {
 	);
 	$( ".js-open-timelinecontent9" ).hover(
 	  function() {
+	  	$(".timelinecontent").removeClass("is-show")
 	    $( ".timelinecontent_9" ).addClass("is-show");
 	  }, function() {
 	    $( ".timelinecontent_9" ).removeClass("is-show");
@@ -76,6 +76,7 @@ $(document).ready(function() {
 	);
 	$( ".js-open-timelinecontent10" ).hover(
 	  function() {
+	  	$(".timelinecontent").removeClass("is-show")
 	    $( ".timelinecontent_10" ).addClass("is-show");
 	  }, function() {
 	    $( ".timelinecontent_10" ).removeClass("is-show");

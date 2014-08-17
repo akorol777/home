@@ -358,10 +358,10 @@ $history-btn-w: 140px
 		margin-bottom: 35px
 	.footer__label
 		display: table-cell
-		//background-color: #727272
+		background-color: #727272
 		padding: 35px 15px 40px 
 		text-align: center 
-		//+border-radius(60px) 
+		+border-radius(60px) 
 		+box
 	.footer__label-help
 		background-color: transparent
@@ -818,11 +818,44 @@ $delivery__label-size: 105px
 		line-height: 24px
 		padding: 0 150px 
 		+box
-
-
-
-/*----------------------------------------------------------------*/		
-/*----------------------------------------------------------------*/		
+/*------extreme----------------------------------------------------------*/		
+.extreme
+	padding: 60px 0 215px
+	background-color: $bg-c 
+	background-image: image-url('bg-4.jpg')
+	text-align: center
+	+cover
+	.title-big
+		margin-bottom: 40px	
+	.extreme-ico
+		margin-bottom: 15px
+	.extreme__content
+		font-size: 28px
+		line-height: 36px
+		padding: 0 150px
+		margin-bottom: 70px 
+		+box		
+	.btn-watch
+		vertical-align: middle
+		margin: 0 10px 
+	.extreme__content-link	
+		font-size: 28px
+		line-height: 36px
+		+transition
+		&:hover
+			text-decoration: underline
+			color: #000 			
+/*-----.important-----------------------------------------------------------*/		
+.important
+	@extend .text-light
+	background-color: $label-c
+	height: 72px
+	line-height: 64px
+	text-align: center
+	font-size: 28px 
+	.important__ico
+		margin-right: 25px
+	
 /*----------------------------------------------------------------*/		
 		
 
@@ -984,7 +1017,13 @@ $delivery__label-size: 105px
 	color: #FFF
 	width: 100%
 	font-size: 0
-	+transition 									
+	+transition 
+.btn-watch
+	display: inline-block
+	+s(i-yt)
+	+transition
+	&:hover
+		+transform(scale(1.1))										
 .btn-out
 	text-align: center		
 /*-----input------------------------------------------*/
